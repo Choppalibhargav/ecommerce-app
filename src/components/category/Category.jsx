@@ -1,19 +1,16 @@
-import styled from "styled-components";
-import { categories } from "";
+import "./category.css"
+import {categories}  from "../../backend/db/data";
 import CategoryItem from "./Categoryitem";
 
-const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-`;
+
 
 const Categories = () => {
   return (
-    <Container>
+    <div className="Container">
       {categories.map((item) => (
         <CategoryItem item={item} key={item.id} />
       ))}
-    </Container>
+    </div>
   );
 };
 

@@ -1,5 +1,5 @@
-import { products } from "../backend/db/data";
-import ProductItem from "../pages/Productitem";
+import { products } from "../../backend/db/data";
+import ProductItem from "./Productitem";
 import styled from "styled-components";
 import React from "react";
 

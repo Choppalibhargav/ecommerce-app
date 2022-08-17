@@ -7,139 +7,51 @@ import {
     Room,
     Twitter
   } from "@material-ui/icons";
-  import styled from "styled-components";
-  
-  const Container = styled.div`
-    display: flex;
-  `;
-  
-  const Left = styled.div`
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-  `;
-  
-  const Logo = styled.h1`
-    color: red;
-    font-size: 35px;
-  `;
-  
-  const Desc = styled.p`
-    margin: 20px 0px;
-    color: red;
-    font-size: 20px;
-  `;
-  
-  const SocialContainer = styled.div`
-    display: flex;
-  `;
-  
-  const SocialIcon = styled.div`
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    color: white;
-    background-color: #${(props) => props.color};
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
-  `;
-  
-  const Center = styled.div`
-    flex: 1;
-    padding: 20px;
-  `;
-  
-  const Title = styled.h3`
-    margin-bottom: 30px;
-    color: red;
-    font-size: 30px;
-  `;
-  
-  const List = styled.ul`
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-  `;
-  
-  const ListItem = styled.li`
-    width: 50%;
-    margin-bottom: 10px;
-    color: red;
-    font-size: 20px;
-  `;
-  
-  const Right = styled.div`
-    flex: 1;
-    padding: 20px;
-  `;
-  
-  const ContactItem = styled.div`
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    color: red;
-    font-size: 20px;
-  `;
-  
-  const Payment = styled.img`
-    width: 50%;
-  `;
+  import "./Footer.css"
   
   const Footer = () => {
     return (
-      <Container>
-        <Left>
-          <Logo>ARIES_SHOP</Logo>
-          <Desc>Follow us on social media for more updates</Desc>
-          <SocialContainer>
-            <SocialIcon color="3B5999">
-              <Facebook />
-            </SocialIcon>
-            <SocialIcon color="E4405F">
-              <Instagram />
-            </SocialIcon>
-            <SocialIcon color="55ACEE">
-              <Twitter />
-            </SocialIcon>
-            <SocialIcon color="E60023">
-              <Pinterest />
-            </SocialIcon>
-          </SocialContainer>
-        </Left>
-        <Center>
-          <Title>Useful Links</Title>
-          <List>
-            <ListItem>Home</ListItem>
-            <ListItem>Cart</ListItem>
-            <ListItem>Shoes</ListItem>
-            <ListItem>Sneakers</ListItem>
-            <ListItem>Boots</ListItem>
-            <ListItem>My Account</ListItem>
-            <ListItem>Order Tracking</ListItem>
-            <ListItem>Wishlist</ListItem>
-            <ListItem>Terms and conditions</ListItem>
-          </List>
-        </Center>
-        <Right>
-          <Title>Contact</Title>
-          <ContactItem>
+      <div className="Container">
+        <div className="Left">
+          <h1>ARIES_SHOP</h1>
+          <p>Follow us on social media for more updates</p>
+          <div className="SocialContainer">
+            <div className="SocialIcon" color="3B5999"><Facebook /></div>
+            <div className="SocialIcon" color="E4405F"><Instagram/></div>
+            <div className="SocialIcon" color="55ACEE"><Twitter /></div>
+            <div className="SocialIcon" color="E60023"><Pinterest /></div>
+          </div>
+        </div>
+        <div className="Center">
+          <div className="Title">Useful Links</div>
+          <ul>
+            <li>Home</li>
+            <li>Cart</li>
+            <li>Shoes</li>
+            <li>Sneakers</li>
+            <li>Boots</li>
+            <li>My Account</li>
+            <li>Order Tracking</li>
+            <li>Wishlist</li>
+            <li>Terms and conditions</li>
+          </ul>
+        </div>
+        <div className="Right">
+          <div className="Title">Contact</div>
+
+          <div className="Contactitem">
             <Room style={{ marginRight: "10px" }} /> IN India
-          </ContactItem>
-          <ContactItem>
+          </div>
+          <div className="Contactitem">
             <Phone style={{ marginRight: "10px" }} />
             (+91)1234567890
-          </ContactItem>
-          <ContactItem>
+          </div>
+          <div className="Contactitem">
             <MailOutline style={{ marginRight: "10px" }} /> contact@aries.shop
-          </ContactItem>
-          <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
-        </Right>
-      </Container>
+          </div>
+          <img src="https://i.ibb.co/Qfvn4z6/payment.png" />
+        </div>
+      </div>
     );
   };
   

@@ -1,8 +1,8 @@
 import "./App.css";
-import Products from "./pages/Products";
+import Products from "./pages/products/Products";
 //import Announcement from "./components/Announcement/Announcement";
-import Categories from "./components/Category/Category";
-//import Footer from "./components/Footer";
+//import Categories from "../src/components/category/Category"
+import Footer from "./components/Footer/Footer";
 //import Navbar from "./components/Navbar";
 //import Newsletter from "./components/Newsletter";
 //import Slider from "./components/slider;
@@ -10,7 +10,7 @@ import Categories from "./components/Category/Category";
 function App() {
   return (
     <div>
-     <Categories/>
+     <Footer/>
     </div>
   );
 }
