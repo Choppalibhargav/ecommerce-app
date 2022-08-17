@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { categories } from "../backend/data";
-import CategoryItem from "../components/Categoryitem";
+import { categories } from "";
+import CategoryItem from "./Categoryitem";
 
 const Container = styled.div`
   display: flex;
